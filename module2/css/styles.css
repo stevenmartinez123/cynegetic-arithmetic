@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'runner';
+    src: url('../font/bladerunner/BLADRMF_.TTF');
+}
+
+@font-face {
+    font-family: 'orbitron';
+    src: url('../font/Orbitron/Orbitron-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'orbitron-bold';
+    src: url('../font/Orbitron/static/Orbitron-ExtraBold.ttf');
+}
+
+.livesContainer {
+    position: absolute;
+    bottom: 6.5%;
+    font-family: 'orbitron';
+    color: white;
+    padding: 10px;
+    padding-right: 70px;
+    font-size: 1rem;
+    border: 3px solid #0abdc6;
+    border-radius: 10px;
+    display: none;
+    gap: 10px;
+}
+
+#lives {
+   margin-left: 10px;
+}
+
+canvas {
+    display:none;
+    border-radius: 10px;
+}
+
+#game {
+    border: 3px solid #0abdc6;
+}
+
+#title {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 3.5rem;
+    color: #ea00d9;
+    border: 3px solid #0abdc6;
+    box-shadow: 5px 10px 15px #ea00d9;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    font-family: 'runner';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        0deg, rgb(222, 65, 205) 0%, 
+        rgb(7, 44, 148) 100%
+    );
+    position: relative;
+}
+
+#playGame-container, #gameOver-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+#playGame, #gameOver {
+    margin-top: 50px;
+    height: 400px;
+    width: 450px;
+    background: linear-gradient(
+        0deg, #ea00d9 0%, 
+        #133e7c 100%
+    );
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #0abdc6;
+    border-radius: 10px;
+    position: relative;
+}
+
+#gameOver h1 {
+    color: #0abdc6;
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-family: 'runner';
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+#startgame-form {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 70%;
+    right: 35%;
+}
+
+#instructions {
+    color: white;
+    font-family: 'orbitron';
+    line-height: 2.5rem;
+}
+
+.controls {
+    color: greenyellow;
+}
+
+#gameOver-container {
+   display: none;
+ }
+
+#gameOver-text {
+    font-family: 'orbitron-bold';
+    color: rgb(60, 254, 205);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#wrongAnswers {
+    text-decoration: underline;
+}
+
+#start-btn, #gameOver button {
+    padding: 20px 40px;
+    font-size: 1rem;
+    font-family: 'runner';
+    border-radius: 3px;
+    background-color: greenyellow;
+}
+
+#gameOver button {
+    font-family: 'orbitron';
+    font-size: 1.2rem;
+    margin-top: 8rem;
+    background-color: #133e7c;
+    color: greenyellow;
+    border-radius: 5px;
+}
