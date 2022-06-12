@@ -99,6 +99,7 @@ body {
     font-family: 'runner';
     text-decoration: underline;
     text-decoration-color: white;
+    cursor: default;
 }
 
 #startgame-form {
@@ -114,6 +115,10 @@ body {
     color: white;
     font-family: 'orbitron';
     line-height: 2.5rem;
+}
+
+p {
+    cursor: default;
 }
 
 .controls {
@@ -141,6 +146,7 @@ body {
     font-family: 'runner';
     border-radius: 3px;
     background-color: greenyellow;
+    cursor: pointer;
 }
 
 #gameOver button {
