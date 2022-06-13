@@ -177,7 +177,7 @@ class BulletController {
     }
 
 }
-
+//class bullet that takes x and y coordinate, its bullet speed, and its damage
 class Bullet {
     constructor(x, y, speed, damage) {
         this.x = x; 
@@ -185,9 +185,9 @@ class Bullet {
         this.speed = speed; 
         this.damage = damage; 
 
-        this.width = 5; 
-        this.height = 25; 
-        this.color = '#00ff9f';
+        this.width = 5; //bullet width at 5 
+        this.height = 25; //bullet height at 25
+        this.color = '#00ff9f'; //color set to neon green
     }
 
 //draw function to draw bullets
@@ -212,7 +212,8 @@ class Bullet {
             return false;
     }
 }
-
+//block class that displays answers falling down screen
+//takes x and y coordinates, formula text, if its a wrong or right answer, and its position to fall on the grid
 class Block {
     constructor(x, y, text, good, xIndex) {
         this.x = x; 
@@ -224,7 +225,7 @@ class Block {
         this.height = 150;
         this.xIndex = xIndex;
     }
-
+    //draws block to screen
     draw(ctx, index) {
 
         ctx.fillStyle = this.color; 
@@ -262,12 +263,12 @@ class Block {
                         clearInterval(gameStart);
                     }
             }
-            this.y = randomYCordinate();
-            let newBlock = reserveBlocks[randomBlock()];
-            newBlock.y = randomYCordinate();
-            newBlock.xIndex = this.xIndex;
-            newBlock.x = randomXCoordinate(newBlock.xIndex);
-            blocks.splice(index, 1, newBlock);
+            this.y = randomYCordinate(); //gives this block a new y coordinate
+            let newBlock = reserveBlocks[randomBlock()]; //recieves a new block to display on grid
+            newBlock.y = randomYCordinate(); //assigns new block a new y coordinate
+            newBlock.xIndex = this.xIndex; //new block x position index changed to previous blocks index
+            newBlock.x = randomXCoordinate(newBlock.xIndex); //new block assigned a new x position
+            blocks.splice(index, 1, newBlock); //replaces old block with new block from reserve array
         }
 
     }

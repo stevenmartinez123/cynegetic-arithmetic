@@ -10,17 +10,17 @@
     <title>Cynegetic Arithmetic</title>
 </head>
 <body>
-    
+    <!--audio for the game, background sound for game loop and blaster when a bullet fired-->
     <audio id="background-sound" src="../module2/audio/viol.mp3" autoplay></audio>
     <audio id = "blaster" src="../module2/audio/blaster.mp3"></audio>
-    <h1 id="title">Cynegetic Arithmetic</h1>
-    <canvas id="game"></canvas>
+    <h1 id="title">Cynegetic Arithmetic</h1> <!--title of the game in header-->
+    <canvas id="game"></canvas> <!--canvas that is displayed-->
 
-    <div class="livesContainer">
-        <p id="lives">Lives: </p>
+    <div class="livesContainer"> <!--displays lives when game is played-->
+        <p id="lives">Lives: </p> <!--displays lives in lives container-->
     </div>
 
-    <div id="playGame-container">
+    <div id="playGame-container"> <!--container for opening instructions of game-->
         <div id="playGame">
             <p id="instructions">
                 Press the <span class='controls'>left key</span> ⬅️ and <span class='controls'>right key</span> 
@@ -30,17 +30,17 @@
                 You get 3 lives, after that its <span id="gameOver-text">GAME OVER</span> 💀. 
             </p>
             <form id="startgame-form">
-                <button id="start-btn" type="button">Start</button>
+                <button id="start-btn" type="button">Start</button> <!--button to start game-->
             </form>
         </div>
     </div>
 
-    <div id="gameOver-container">
-        <audio id="gameover-chime" src="../module2/audio/gameOver.mp3"></audio>
+    <div id="gameOver-container"> <!--container to display when game is over-->
+        <audio id="gameover-chime" src="../module2/audio/gameOver.mp3"></audio> <!--audio is a game over chime-->
         <div id="gameOver">
             <h1>Game Over!</h1>
             <p id="consoleCheck">Check the console for what you missed!</p>
-            <button id="playAgain-btn">Play Again</button>
+            <button id="playAgain-btn">Play Again</button> <!--button to restart game when clicked-->
         </div>
     </div>
 </body>
