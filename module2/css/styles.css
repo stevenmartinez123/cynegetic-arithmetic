@@ -13,6 +13,7 @@
     src: url('../font/Orbitron/static/Orbitron-ExtraBold.ttf');
 }
 
+/* styling for container that displays lives count div */
 .livesContainer {
     position: absolute;
     bottom: 6.5%;
@@ -26,20 +27,22 @@
     display: none;
     gap: 10px;
 }
-
+/* provides spacing between lives count and the text 'Lives: 'in html */
 #lives {
    margin-left: 10px;
 }
 
+/* adds a border radius to canvas, when html loaded the display is set to none */
 canvas {
     display:none;
     border-radius: 10px;
 }
-
+/* styling to add a colored border to game board */
 #game {
     border: 3px solid #0abdc6;
 }
 
+/* styling for "cynogetic arithmetic" title */
 #title {
     margin-top: 30px;
     margin-bottom: 50px;
@@ -54,6 +57,7 @@ canvas {
     font-family: 'runner';
 }
 
+/* display and styling for the body of the webpage, background set to pink and purple mix */
 body {
     display: flex;
     flex-direction: column;
@@ -66,6 +70,7 @@ body {
     position: relative;
 }
 
+/* styling start up menu and game over container */
 #playGame-container, #gameOver-container {
     width: 100%;
     height: 100%;
@@ -76,6 +81,8 @@ body {
     align-items: center;
     outline: none;
 }
+
+/* styling for container that displays lives count div */
 
 #playGame, #gameOver {
     margin-top: 50px;
@@ -92,6 +99,7 @@ body {
     position: relative;
 }
 
+/* heading styling for game over container */
 #gameOver h1 {
     color: #0abdc6;
     margin-top: 3rem;
@@ -102,6 +110,8 @@ body {
     cursor: default;
 }
 
+/* styling form form in start game menu when page loaded */
+
 #startgame-form {
     position: absolute;
     display: flex;
@@ -111,24 +121,28 @@ body {
     right: 35%;
 }
 
+/* font set to white with custom font for start game menu div */
 #instructions {
     color: white;
     font-family: 'orbitron';
     line-height: 2.5rem;
 }
-
+/* sets cursor to default for instructions menu and header */
 p {
     cursor: default;
 }
 
+/* styling for what controls to use in instructions prompt. color set to greenyellow */
 .controls {
     color: greenyellow;
 }
 
+/* gameOver div originally set to none until game is over */
 #gameOver-container {
    display: none;
  }
 
+ /* heading in game over container styling */
 #gameOver-text {
     font-family: 'orbitron-bold';
     color: rgb(60, 254, 205);
@@ -136,10 +150,12 @@ p {
     text-decoration: underline;
 }
 
+/* span styling for instructions in start game menu */
 #wrongAnswers {
     text-decoration: underline;
 }
 
+/* styling for start game button and game over button */
 #start-btn, #gameOver button {
     padding: 20px 40px;
     font-size: 1rem;
@@ -148,7 +164,7 @@ p {
     background-color: greenyellow;
     cursor: pointer;
 }
-
+/* extra styling for game over button */
 #gameOver button {
     font-family: 'orbitron';
     font-size: 1.2rem;
@@ -156,4 +172,12 @@ p {
     background-color: #133e7c;
     color: greenyellow;
     border-radius: 5px;
+}
+
+/* styling for game over text to check console */
+#consoleCheck {
+    font-family: 'orbitron';
+    font-size: 1rem;
+    padding-top: 30px;
+    color: white;
 }
