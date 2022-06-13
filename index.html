@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../module2/css/styles.css">
-    <link rel="stylesheet" href="../module2/css/reset.css">
-    <script src="../module2/js/functions.js" defer></script>
+    <link rel="stylesheet" href="../cynegetic-arithmetic/css/styles.css">
+    <link rel="stylesheet" href="../cynegetic-arithmetic/css/reset.css">
+    <script src="../cynegetic-arithmetic/js/functions.js" defer></script>
     <title>Cynegetic Arithmetic</title>
 </head>
 <body>
     <!--audio for the game, background sound for game loop and blaster when a bullet fired-->
-    <audio id="background-sound" src="../module2/audio/viol.mp3" autoplay></audio>
-    <audio id = "blaster" src="../module2/audio/blaster.mp3"></audio>
+    <audio id="background-sound" src="../cynegetic-arithmetic/audio/viol.mp3" autoplay></audio>
+    <audio id = "blaster" src="../cynegetic-arithmetic/audio/blaster.mp3"></audio>
     <h1 id="title">Cynegetic Arithmetic</h1> <!--title of the game in header-->
     <canvas id="game"></canvas> <!--canvas that is displayed-->
 
-    <div class="livesContainer"> <!--displays lives when game is played-->
-        <p id="lives">Lives: </p> <!--displays lives in lives container-->
+    <!--displays lives when game is played-->
+    <div class="livesContainer"> 
+        <p id="lives">Lives: </p> 
     </div>
 
     <div id="playGame-container"> <!--container for opening instructions of game-->
@@ -36,7 +37,7 @@
     </div>
 
     <div id="gameOver-container"> <!--container to display when game is over-->
-        <audio id="gameover-chime" src="../module2/audio/gameOver.mp3"></audio> <!--audio is a game over chime-->
+        <audio id="gameover-chime" src="../cynegetic-arithmetic/audio/gameOver.mp3"></audio> <!--audio is a game over chime-->
         <div id="gameOver">
             <h1>Game Over!</h1>
             <p id="consoleCheck">Check the console for what you missed!</p>
