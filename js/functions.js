@@ -6,6 +6,7 @@ const startBtn = document.getElementById('start-btn'); //start button to start g
 canvas.width = 650; //game width set to 650px
 canvas.height = 400; //game height set to 400px
 const audio = document.querySelector("#background-sound"); //background audio while playing
+audio.volume = 0.4; //volume of game audio 
 const gameOverChime = document.getElementById('gameover-chime'); //audio plays when game over displayed
 const gameOverContainer = document.getElementById('gameOver-container'); //container div for gameover display
 const playAgainBtn = document.getElementById('playAgain-btn'); //button to allow player to play again
@@ -35,7 +36,6 @@ function gameLoop() {
     bulletController.draw(ctx); // draws bullets on grid
     player.draw(ctx); //draws player on grid
     populateBlocks(); //populates blocks on grid
-    audio.volume = 0.2; //volume of game audio 
     audio.play(); // plays game audio on loop
 }
 
