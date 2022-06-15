@@ -15,7 +15,7 @@
 
 /* styling for container that displays lives count div */
 .livesContainer {
-    position: absolute;
+    position: fixed;
     top: 18%;
     font-family: 'orbitron';
     color: white;
