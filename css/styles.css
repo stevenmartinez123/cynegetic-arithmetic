@@ -16,7 +16,7 @@
 /* styling for container that displays lives count div */
 .livesContainer {
     position: absolute;
-    bottom: 6.5%;
+    top: 18%;
     font-family: 'orbitron';
     color: white;
     padding: 10px;
@@ -39,6 +39,7 @@ canvas {
 }
 /* styling to add a colored border to game board */
 #game {
+    margin-top: 40px;
     border: 3px solid #0abdc6;
 }
 
@@ -164,6 +165,11 @@ p {
     background-color: greenyellow;
     cursor: pointer;
 }
+
+#start-btn {
+    margin-top: 15px;
+}
+
 /* extra styling for game over button */
 #gameOver button {
     font-family: 'orbitron';
