@@ -86,7 +86,7 @@ body {
 
 #playGame, #gameOver {
     margin-top: 50px;
-    height: 400px;
+    height: 340px;
     width: 450px;
     background: linear-gradient(
         0deg, #ea00d9 0%, 
@@ -168,7 +168,7 @@ p {
 #gameOver button {
     font-family: 'orbitron';
     font-size: 1.2rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
     background-color: #133e7c;
     color: greenyellow;
     border-radius: 5px;
