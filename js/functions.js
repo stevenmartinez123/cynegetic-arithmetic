@@ -215,12 +215,12 @@ class Bullet {
 //block class that displays answers falling down screen
 //takes x and y coordinates, formula text, if its a wrong or right answer, and its position to fall on the grid
 class Block {
-    constructor(x, y, text, good, xIndex) {
+    constructor(x, y, text, correct, xIndex) {
         this.x = x; 
         this.y = y; 
         this.color = `rgb(${randomRGBGenerator()}, ${randomRGBGenerator()}, ${randomRGBGenerator()})` 
         this.text = text; 
-        this.good = good;
+        this.correct = correct;
         this.width = 35; 
         this.height = 150;
         this.xIndex = xIndex;
@@ -248,7 +248,7 @@ class Block {
         if (this.y >= 450) {
         
         //if the block has a wrong equation that passes through, player loses a life
-            if (this.good == false) {
+            if (this.correct == false) {
                 lives--;
                 livesContainer.childNodes[3].data = lives;
                 console.log("You let an incorrect answer pass!");
@@ -281,7 +281,7 @@ function populateBlocks() {
         //if statement if the bullets hits a block
         if (bulletController.collideWith(block)) {
             //if a bullet hits a correct answer a life is deducted
-            if (block.good == true) {
+            if (block.correct == true) {
                 lives--;
                 livesContainer.childNodes[3].data = lives;
                 console.log("You shot a correct answer!");
@@ -322,7 +322,7 @@ function randomRGBGenerator() {
 //places the y axis of new Block between -200 and -450 
 function randomYCordinate() {
         const min = 200;
-        const max = 451;
+        const max = 400;
     return Math.floor(Math.random() * (max - min) + min) * -1;
 }
 
